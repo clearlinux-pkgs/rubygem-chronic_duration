@@ -1,0 +1,64 @@
+From 206ef6ea662b3347ab7aeb39c8c67de648ea14d5 Mon Sep 17 00:00:00 2001
+From: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+Date: Tue, 21 Jul 2015 16:11:27 +0000
+Subject: [PATCH] Use local versions
+
+Signed-off-by: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+---
+ chronic_duration.gemspec         |  6 +++---
+ rubygem-chronic_duration.gemspec | 18 +++++++++---------
+ 2 files changed, 12 insertions(+), 12 deletions(-)
+
+diff --git a/chronic_duration.gemspec b/chronic_duration.gemspec
+index c94711a..937c741 100644
+--- a/chronic_duration.gemspec
++++ b/chronic_duration.gemspec
+@@ -19,10 +19,10 @@ Gem::Specification.new do |gem|
+   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+   gem.require_paths = ["lib"]
+ 
+-  gem.add_runtime_dependency "numerizer", "~> 0.1.1"
++  gem.add_runtime_dependency "numerizer", ">= 0.1.1"
+ 
+-  gem.add_development_dependency "rake", "~> 10.0.3"
+-  gem.add_development_dependency "rspec", "~> 2.12.0"
++  gem.add_development_dependency "rake", ">= 10.0.3"
++  gem.add_development_dependency "rspec", ">= 2.12.0"
+ 
+ 
+ end
+diff --git a/rubygem-chronic_duration.gemspec b/rubygem-chronic_duration.gemspec
+index f4deecc..04e04d5 100644
+--- a/rubygem-chronic_duration.gemspec
++++ b/rubygem-chronic_duration.gemspec
+@@ -22,18 +22,18 @@ Gem::Specification.new do |s|
+     s.specification_version = 4
+ 
+     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+-      s.add_runtime_dependency(%q<numerizer>, ["~> 0.1.1"])
+-      s.add_development_dependency(%q<rake>, ["~> 10.0.3"])
+-      s.add_development_dependency(%q<rspec>, ["~> 2.12.0"])
++      s.add_runtime_dependency(%q<numerizer>, [">= 0.1.1"])
++      s.add_development_dependency(%q<rake>, [">= 10.0.3"])
++      s.add_development_dependency(%q<rspec>, [">= 2.12.0"])
+     else
+-      s.add_dependency(%q<numerizer>, ["~> 0.1.1"])
+-      s.add_dependency(%q<rake>, ["~> 10.0.3"])
+-      s.add_dependency(%q<rspec>, ["~> 2.12.0"])
++      s.add_dependency(%q<numerizer>, [">= 0.1.1"])
++      s.add_dependency(%q<rake>, [">= 10.0.3"])
++      s.add_dependency(%q<rspec>, [">= 2.12.0"])
+     end
+   else
+-    s.add_dependency(%q<numerizer>, ["~> 0.1.1"])
+-    s.add_dependency(%q<rake>, ["~> 10.0.3"])
+-    s.add_dependency(%q<rspec>, ["~> 2.12.0"])
++    s.add_dependency(%q<numerizer>, [">= 0.1.1"])
++    s.add_dependency(%q<rake>, [">= 10.0.3"])
++    s.add_dependency(%q<rspec>, [">= 2.12.0"])
+   end
+ end
+ 
+-- 
+2.4.2
+
