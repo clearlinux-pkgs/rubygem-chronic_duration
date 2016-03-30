@@ -4,19 +4,17 @@
 #
 Name     : rubygem-chronic_duration
 Version  : 0.10.6
-Release  : 4
+Release  : 5
 URL      : https://rubygems.org/downloads/chronic_duration-0.10.6.gem
 Source0  : https://rubygems.org/downloads/chronic_duration-0.10.6.gem
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
 BuildRequires : ruby
-BuildRequires : rubygem-numerizer
 BuildRequires : rubygem-rake
 BuildRequires : rubygem-rdoc
 BuildRequires : rubygem-rspec
 BuildRequires : rubygem-rspec-core
-Patch1: 0001-Use-local-versions.patch
 
 %description
 [![Build Status](https://travis-ci.org/hpoydar/chronic_duration.png?branch=master)](https://travis-ci.org/hpoydar/chronic_duration)
@@ -25,7 +23,6 @@ Patch1: 0001-Use-local-versions.patch
 gem unpack %{SOURCE0}
 %setup -q -D -T -n chronic_duration-0.10.6
 gem spec %{SOURCE0} -l --ruby > rubygem-chronic_duration.gemspec
-%patch1 -p1
 
 %build
 gem build rubygem-chronic_duration.gemspec
@@ -52,38 +49,16 @@ fi
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/chronic_duration-0.10.6.gem
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/DurationParseError/cdesc-DurationParseError.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/calculate_from_words-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/cdesc-ChronicDuration.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/cleanup-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/convert_to_number-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/days_per_week%3d-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/days_per_week-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/duration_units_list-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/duration_units_seconds_multiplier-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/filter_by_type-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/filter_through_white_list-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/float_matcher-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/hours_per_day%3d-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/hours_per_day-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/humanize_time_unit-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/join_words-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/mappings-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/output-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/parse-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/raise_exceptions%3d-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/ChronicDuration/raise_exceptions-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/chronic_duration-0.10.6/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/.travis.yml
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/Gemfile
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/LICENSE.txt
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/README.md
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/chronic_duration.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/lib/chronic_duration.rb
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/lib/chronic_duration/version.rb
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/spec/lib/chronic_duration_spec.rb
-/usr/lib64/ruby/gems/2.2.0/gems/chronic_duration-0.10.6/spec/spec_helper.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/chronic_duration-0.10.6.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/chronic_duration-0.10.6.gem
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/.travis.yml
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/Gemfile
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/LICENSE.txt
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/README.md
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/chronic_duration.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/lib/chronic_duration.rb
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/lib/chronic_duration/version.rb
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/spec/lib/chronic_duration_spec.rb
+/usr/lib64/ruby/gems/2.3.0/gems/chronic_duration-0.10.6/spec/spec_helper.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/chronic_duration-0.10.6.gemspec
