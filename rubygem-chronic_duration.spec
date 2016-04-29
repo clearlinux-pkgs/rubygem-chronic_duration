@@ -4,7 +4,7 @@
 #
 Name     : rubygem-chronic_duration
 Version  : 0.10.6
-Release  : 6
+Release  : 7
 URL      : https://rubygems.org/downloads/chronic_duration-0.10.6.gem
 Source0  : https://rubygems.org/downloads/chronic_duration-0.10.6.gem
 Summary  : No detailed summary available
